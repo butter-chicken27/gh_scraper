@@ -2,9 +2,10 @@ name: Bain Events Watcher
 
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '7,22,37,52 * * * *'
   workflow_dispatch:
-
+  repository_dispatch:
+    types: [trigger-scraper]
 jobs:
   scrape:
     runs-on: ubuntu-latest
