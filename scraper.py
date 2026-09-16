@@ -3,7 +3,7 @@ import os
 import smtplib
 import sys
 from datetime import datetime
-from playwright.sync_api import sync_api
+from playwright.sync_api import sync_playwright
 
 URL = "https://www.bain.com/careers/work-with-us/students/nyu-stern/"
 EVENTS_FILE = "events.json"
@@ -63,7 +63,7 @@ def main():
 
         existing_ids = {e["id"] for e in existing_events}
 
-        with sync_api() as p:
+        with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
             
             # --- Stealth & Anti-Detection Setup ---
