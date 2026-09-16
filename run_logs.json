@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "timestamp": "2026-09-16T16:48:38.466526Z",
+    "status": "SUCCESS",
+    "message": "Completed run. Scraped 1 events (1 new).",
+    "total_events_scraped": 1
+  }
+]
