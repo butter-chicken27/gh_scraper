@@ -109,7 +109,7 @@ def main():
         except Exception:
           break
 
-      # Browser-Native Card Extraction
+      # Extract Title and URL directly from card elements
       extracted_cards = page.evaluate("""() => {
                 const results = [];
                 const links = Array.from(document.querySelectorAll('a')).filter(
@@ -127,8 +127,18 @@ def main():
                                       .map(s => s.trim())
                                       .filter(s => s.length > 0 && s.toLowerCase() !== 'learn more');
 
+                    let title = "Unknown Title";
+                    if (lines.length > 0) {
+                        // Skip date lines (e.g. 'Sep 16') to grab actual title
+                        if (/^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\s+\\d+/i.test(lines[0]) && lines.length > 1) {
+                            title = lines[1];
+                        } else {
+                            title = lines[0];
+                        }
+                    }
+
                     results.push({
-                        lines: lines,
+                        title: title,
                         url: link.href
                     });
                 });
@@ -137,97 +147,59 @@ def main():
 
       scraped_events = []
       for item in extracted_cards:
-        lines = item["lines"]
+        title = item["title"]
         url = item["url"]
-        if not lines:
-          continue
 
-        date = "N/A"
-        title = "Unknown Title"
-
-        if re.match(
-            r"^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d+",
-            lines[0],
-            re.IGNORECASE,
-        ):
-          date = lines[0]
-          title = lines[1] if len(lines) > 1 else "Unknown Title"
+        # Generate unique ID based on URL/eventid (allows same-title events)
+        event_id_match = re.search(r"eventid=(\d+)", url, re.IGNORECASE)
+        if event_id_match:
+          unique_id = f"event_{event_id_match.group(1)}"
         else:
-          title = lines[0]
-
-        office, audience = "N/A", "N/A"
-        for i, line in enumerate(lines):
-          clean_line = line.rstrip(":").strip().lower()
-          if clean_line == "office" and i + 1 < len(lines):
-            office = lines[i + 1]
-          elif clean_line == "audience" and i + 1 < len(lines):
-            audience = lines[i + 1]
-
-        clean_title = re.sub(r"[^a-zA-Z0-9]", "_", title.lower()).strip("_")
-        clean_date = re.sub(r"[^a-zA-Z0-9]", "_", date.lower()).strip("_")
-        unique_id = f"{clean_date}_{clean_title}"
+          unique_id = re.sub(r"[^a-zA-Z0-9]", "_", url.lower()).strip("_")
 
         scraped_events.append({
             "id": unique_id,
             "title": title,
-            "date": date,
-            "office": office,
-            "audience": audience,
             "url": url,
         })
 
       browser.close()
 
-    unique_scraped = {e["id"]: e for e in scraped_events}.values()
-    new_events = [e for e in unique_scraped if e["id"] not in existing_ids]
+    # Match new events using URL unique IDs
+    new_events = [e for e in scraped_events if e["id"] not in existing_ids]
 
     if new_events:
-      table_rows = "".join([
-          f"""
-                <tr>
-                    <td style="padding: 8px; border: 1px solid #ddd;">{e['date']}</td>
-                    <td style="padding: 8px; border: 1px solid #ddd;"><strong>{e['title']}</strong></td>
-                    <td style="padding: 8px; border: 1px solid #ddd;">{e['office']}</td>
-                    <td style="padding: 8px; border: 1px solid #ddd;">{e['audience']}</td>
-                    <td style="padding: 8px; border: 1px solid #ddd;"><a href="{e['url']}">View Event</a></td>
-                </tr>
-                """
+      list_items = "".join([
+          f"<li style='margin-bottom: 12px;'><strong>{e['title']}</strong><br><a"
+          f" href='{e['url']}'>View Event Details</a></li>"
           for e in new_events
       ])
 
       email_body = f"""
             <h2>🚨 {len(new_events)} New Bain Event(s) Posted</h2>
-            <table style="border-collapse: collapse; width: 100%; font-family: Arial, sans-serif;">
-                <thead>
-                    <tr style="background-color: #f2f2f2;">
-                        <th style="padding: 8px; border: 1px solid #ddd; text-align: left;">Date</th>
-                        <th style="padding: 8px; border: 1px solid #ddd; text-align: left;">Title</th>
-                        <th style="padding: 8px; border: 1px solid #ddd; text-align: left;">Office</th>
-                        <th style="padding: 8px; border: 1px solid #ddd; text-align: left;">Audience</th>
-                        <th style="padding: 8px; border: 1px solid #ddd; text-align: left;">Link</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {table_rows}
-                </tbody>
-            </table>
+            <ul style="font-family: Arial, sans-serif; line-height: 1.5; padding-left: 20px;">
+                {list_items}
+            </ul>
             """
 
       send_email(
           f"🚨 {len(new_events)} New Bain Event(s) Posted", email_body
       )
 
-      all_events = list(unique_scraped) + [
-          e for e in existing_events if e["id"] not in {x["id"] for x in unique_scraped}
+      # Store full list of all active scraped events
+      all_events = scraped_events + [
+          e
+          for e in existing_events
+          if e["id"] not in {x["id"] for x in scraped_events}
       ]
       with open(EVENTS_FILE, "w") as f:
         json.dump(all_events, f, indent=2)
 
     msg = (
-        f"Completed run. Scraped {len(unique_scraped)} events ({len(new_events)}"
-        " new)."
+        f"Completed run. Scraped {len(scraped_events)} total events"
+        f" ({len(new_events)} new)."
     )
-    log_run("SUCCESS", msg, len(unique_scraped))
+    log_run("SUCCESS", msg, len(scraped_events))
     print(msg)
 
   except Exception as e:
