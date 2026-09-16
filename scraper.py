@@ -1,8 +1,11 @@
 import json
 import os
+import re
 import smtplib
 import sys
 from datetime import datetime
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 from playwright.sync_api import sync_playwright
 
 URL = "https://www.bain.com/careers/work-with-us/students/nyu-stern/"
@@ -15,11 +18,8 @@ def send_email(subject, body_html):
     recipient = os.environ.get("RECIPIENT_EMAIL")
 
     if not all([smtp_user, smtp_pass, recipient]):
-        print("Missing email credentials. Skipping notification.")
+        print("Missing email credentials. Skipping email.")
         return
-
-    from email.mime.multipart import MIMEMultipart
-    from email.mime.text import MIMEText
 
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject
@@ -65,8 +65,6 @@ def main():
 
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
-            
-            # --- Stealth & Anti-Detection Setup ---
             context = browser.new_context(
                 user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
                 viewport={"width": 1366, "height": 768},
@@ -74,8 +72,7 @@ def main():
                 timezone_id="America/New_York"
             )
             page = context.new_page()
-            
-            # Hide automation flags
+
             page.add_init_script("""
                 Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
                 window.chrome = { runtime: {} };
@@ -83,7 +80,7 @@ def main():
 
             page.goto(URL, wait_until="domcontentloaded", timeout=60000)
 
-            # Dismiss cookie banner if visible
+            # Accept cookies if present
             try:
                 cookie_btn = page.locator("button:has-text('ACCEPT ALL COOKIES')").first
                 if cookie_btn.is_visible(timeout=3000):
@@ -92,7 +89,7 @@ def main():
             except Exception:
                 pass
 
-            # Loop through 'Load More'
+            # Expand all events
             while True:
                 try:
                     btn = page.locator("button:has-text('Load More'), a:has-text('Load More')").first
@@ -104,51 +101,110 @@ def main():
                 except Exception:
                     break
 
-            # Parse Event Cards
             scraped_events = []
-            cards = page.locator("div").filter(has=page.locator("a:has-text('Learn more')")).all()
+            # Target event links directly to locate individual cards precisely
+            learn_more_links = page.locator("a:has-text('Learn more')").all()
 
-            for card in cards:
-                text_lines = [line.strip() for line in card.inner_text().split("\n") if line.strip()]
-                link_el = card.locator("a:has-text('Learn more')").first
-                url = link_el.get_attribute("href") if link_el.count() > 0 else URL
-                if url and url.startswith("/"):
-                    url = "https://www.bain.com" + url
+            for link in learn_more_links:
+                try:
+                    # Climb up to the specific event card container
+                    card = link.locator("xpath=./ancestor::div[contains(@class, 'card') or contains(@class, 'event') or position()=3]").first
+                    raw_text = card.inner_text().replace("\xa0", " ")
+                    lines = [l.strip() for l in raw_text.split("\n") if l.strip() and l.strip().lower() != "learn more"]
 
-                date = text_lines[0] if text_lines else "Unknown Date"
-                title = text_lines[1] if len(text_lines) > 1 else "Unknown Title"
-                unique_id = f"{date}_{title}".lower().replace(" ", "_")
+                    if not lines:
+                        continue
 
-                office, audience = "N/A", "N/A"
-                for i, line in enumerate(text_lines):
-                    if line.startswith("Office:") and i + 1 < len(text_lines):
-                        office = text_lines[i + 1]
-                    if line.startswith("Audience:") and i + 1 < len(text_lines):
-                        audience = text_lines[i + 1]
+                    # Extract Date & Title
+                    date = "N/A"
+                    title = "Unknown Title"
+                    
+                    # Look for date pattern (e.g. 'Sep 16' or 'Oct 2') in first lines
+                    if re.match(r'^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d+', lines[0], re.IGNORECASE):
+                        date = lines[0]
+                        title = lines[1] if len(lines) > 1 else "Unknown Title"
+                    else:
+                        title = lines[0]
 
-                scraped_events.append({
-                    "id": unique_id,
-                    "title": title,
-                    "date": date,
-                    "office": office,
-                    "audience": audience,
-                    "url": url
-                })
+                    # Extract Office & Audience metadata
+                    office, audience = "N/A", "N/A"
+                    for i, line in enumerate(lines):
+                        if line.rstrip(":").lower() == "office" and i + 1 < len(lines):
+                            val = lines[i + 1]
+                            if val.lower() not in ["audience:", "location:"]:
+                                office = val
+                        elif line.rstrip(":").lower() == "audience" and i + 1 < len(lines):
+                            val = lines[i + 1]
+                            if val.lower() not in ["office:", "location:"]:
+                                audience = val
+
+                    # Get absolute link
+                    url = link.get_attribute("href") or URL
+                    if url.startswith("/"):
+                        url = "https://www.bain.com" + url
+
+                    # Clean ID generation
+                    clean_title = re.sub(r'[^a-zA-Z0-9]', '_', title.lower()).strip('_')
+                    clean_date = re.sub(r'[^a-zA-Z0-9]', '_', date.lower()).strip('_')
+                    unique_id = f"{clean_date}_{clean_title}"
+
+                    scraped_events.append({
+                        "id": unique_id,
+                        "title": title,
+                        "date": date,
+                        "office": office,
+                        "audience": audience,
+                        "url": url
+                    })
+                except Exception:
+                    continue
 
             browser.close()
 
+        # Deduplicate results
         unique_scraped = {e["id"]: e for e in scraped_events}.values()
         new_events = [e for e in unique_scraped if e["id"] not in existing_ids]
 
+        # Email notification formatted cleanly without descriptions
         if new_events:
-            items = "".join([f"<li><strong>{e['title']}</strong> ({e['date']}) — <a href='{e['url']}'>Link</a></li>" for e in new_events])
-            send_email("🚨 New Bain Event(s) Posted", f"<h2>New Bain NYU Stern Events</h2><ul>{items}</ul>")
+            table_rows = "".join([
+                f"""
+                <tr>
+                    <td style="padding: 8px; border: 1px solid #ddd;">{e['date']}</td>
+                    <td style="padding: 8px; border: 1px solid #ddd;"><strong>{e['title']}</strong></td>
+                    <td style="padding: 8px; border: 1px solid #ddd;">{e['office']}</td>
+                    <td style="padding: 8px; border: 1px solid #ddd;">{e['audience']}</td>
+                    <td style="padding: 8px; border: 1px solid #ddd;"><a href="{e['url']}">View Event</a></td>
+                </tr>
+                """
+                for e in new_events
+            ])
+
+            email_body = f"""
+            <h2>🚨 {len(new_events)} New Bain Event(s) Posted</h2>
+            <table style="border-collapse: collapse; width: 100%; font-family: Arial, sans-serif;">
+                <thead>
+                    <tr style="background-color: #f2f2f2;">
+                        <th style="padding: 8px; border: 1px solid #ddd; text-align: left;">Date</th>
+                        <th style="padding: 8px; border: 1px solid #ddd; text-align: left;">Title</th>
+                        <th style="padding: 8px; border: 1px solid #ddd; text-align: left;">Office</th>
+                        <th style="padding: 8px; border: 1px solid #ddd; text-align: left;">Audience</th>
+                        <th style="padding: 8px; border: 1px solid #ddd; text-align: left;">Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {table_rows}
+                </tbody>
+            </table>
+            """
+
+            send_email(f"🚨 {len(new_events)} New Bain Event(s) Posted", email_body)
 
             all_events = list(unique_scraped) + [e for e in existing_events if e["id"] not in {x["id"] for x in unique_scraped}]
             with open(EVENTS_FILE, "w") as f:
                 json.dump(all_events, f, indent=2)
 
-        msg = f"Completed. Scraped {len(unique_scraped)} events ({len(new_events)} new)."
+        msg = f"Completed run. Scraped {len(unique_scraped)} events ({len(new_events)} new)."
         log_run("SUCCESS", msg, len(unique_scraped))
         print(msg)
 
