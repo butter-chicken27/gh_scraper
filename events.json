@@ -1,28 +1,8 @@
 [
   {
-    "id": "event_109031",
-    "title": "2026 1Y MBA: The Home Office Advantage: DC Edition \u2013 Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=109031"
-  },
-  {
-    "id": "event_102380",
-    "title": "2026 DC Consultant Recruiter Office Hours - Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=102380"
-  },
-  {
-    "id": "event_109655",
-    "title": "2026 APAC Consultant Recruiter Office Hours (MBA Schools - US) - Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=109655"
-  },
-  {
     "id": "event_108219",
     "title": "2026 Los Angeles MBA 1st Year Get to Know the Bain Office - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108219"
-  },
-  {
-    "id": "event_108256",
-    "title": "2026 Denver MBA 1st Year Coffee Chats - Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108256"
   },
   {
     "id": "event_108260",
@@ -56,12 +36,12 @@
   },
   {
     "id": "event_107850",
-    "title": "2026 Get to Know the Bain Boston Office Event - Virtual",
+    "title": "2026 Boston MBA 1st Year Get to Know the Bain Office - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=107850"
   },
   {
     "id": "event_108139",
-    "title": "2026 Atlanta MBA 1st Year Get to Know the Bain Atlanta Office - Virtual",
+    "title": "2026 Atlanta MBA 1st Year Get to Know the Bain Office - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108139"
   },
   {
@@ -91,17 +71,17 @@
   },
   {
     "id": "event_108911",
-    "title": "2026 Texas SA Meet the Austin Office Event - Virtual, 9/30",
+    "title": "2026 Austin MBA 1st Year Get to Know the Bain Office - Virtual, 9/30",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108911"
   },
   {
     "id": "event_108912",
-    "title": "2026 Texas SA Meet the Dallas Office Event - Virtual, 9/30",
+    "title": "2026 Dallas MBA 1st Year Get to Know the Bain Office - Virtual, 9/30",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108912"
   },
   {
     "id": "event_108913",
-    "title": "2026 Texas SA Meet the Houston Office Event - Virtual, 9/30",
+    "title": "2026 Houston MBA 1st Year Get to Know the Bain Office - Virtual, 9/30",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108913"
   },
   {
@@ -176,7 +156,7 @@
   },
   {
     "id": "event_107382",
-    "title": "2026 MBA 1st Year The Generalist Model Explained Option 1 \u2013 Virtual",
+    "title": "2026 MBA 1st Year Inside Staffing: Your Path at Bain - Option 1 \u2013 Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=107382"
   },
   {
@@ -235,6 +215,11 @@
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=109176"
   },
   {
+    "id": "event_107383",
+    "title": "2026 MBA 1st Year Inside Staffing: Your Path at Bain - Option 2 \u2013 Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=107383"
+  },
+  {
     "id": "event_107356",
     "title": "2026 Intro to Bain's Performance Improvement Practice - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=107356"
@@ -260,18 +245,23 @@
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108579"
   },
   {
+    "id": "event_108102",
+    "title": "2026 New York MBA 1st Year Get to Know the Bain Office - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108102"
+  },
+  {
     "id": "event_102382",
     "title": "2026 DC Consultant Recruiter Office Hours - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=102382"
   },
   {
-    "id": "event_108102",
-    "title": "2026 New York MBA 1st Year Get to Know the NY Office - Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108102"
+    "id": "event_109075",
+    "title": "2026 DC MBA 1st Year Get to Know the Bain DC Office - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=109075"
   },
   {
     "id": "event_108140",
-    "title": "2026 Atlanta MBA 1st Year Get to Know the Bain Atlanta Office - Virtual",
+    "title": "2026 Atlanta MBA 1st Year Get to Know the Bain Office - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108140"
   },
   {
@@ -330,11 +320,6 @@
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108152"
   },
   {
-    "id": "event_107383",
-    "title": "2026 MBA 1st Year The Generalist Model Explained Option 2 \u2013 Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=107383"
-  },
-  {
     "id": "event_106965",
     "title": "2026 Stern MBA 1st Year Women at Bain Event - In-Person",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=106965"
@@ -383,6 +368,26 @@
     "id": "event_102384",
     "title": "2026 DC Consultant Recruiter Office Hours - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=102384"
+  },
+  {
+    "id": "event_109031",
+    "title": "2026 1Y MBA: The Home Office Advantage: DC Edition \u2013 Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=109031"
+  },
+  {
+    "id": "event_102380",
+    "title": "2026 DC Consultant Recruiter Office Hours - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=102380"
+  },
+  {
+    "id": "event_109655",
+    "title": "2026 APAC Consultant Recruiter Office Hours (MBA Schools - US) - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=109655"
+  },
+  {
+    "id": "event_108256",
+    "title": "2026 Denver MBA 1st Year Coffee Chats - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108256"
   },
   {
     "id": "event_108862",
