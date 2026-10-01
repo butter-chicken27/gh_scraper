@@ -35,11 +35,6 @@
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108863"
   },
   {
-    "id": "event_109031",
-    "title": "2026 DC MBA 1st Year Get to Know the Bain DC Office \u2013 Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=109031"
-  },
-  {
     "id": "event_108221",
     "title": "2026 New York MBA 1st Year Coffee Chats - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108221"
@@ -200,6 +195,11 @@
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=109176"
   },
   {
+    "id": "event_110656",
+    "title": "2026 Bain Breaks it Down: AI in Practice",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=110656"
+  },
+  {
     "id": "event_108320",
     "title": "2026 Denver MBA 1st Year Meet the Leadership Team - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108320"
@@ -240,14 +240,14 @@
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108579"
   },
   {
-    "id": "event_108102",
-    "title": "2026 New York MBA 1st Year Get to Know the Bain Office - Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108102"
-  },
-  {
     "id": "event_102382",
     "title": "2026 DC Consultant Recruiter Office Hours - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=102382"
+  },
+  {
+    "id": "event_108102",
+    "title": "2026 New York MBA 1st Year Get to Know the Bain Office - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108102"
   },
   {
     "id": "event_109075",
@@ -368,6 +368,11 @@
     "id": "event_102384",
     "title": "2026 DC Consultant Recruiter Office Hours - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=102384"
+  },
+  {
+    "id": "event_109031",
+    "title": "2026 DC MBA 1st Year Get to Know the Bain DC Office \u2013 Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=109031"
   },
   {
     "id": "event_108481",
