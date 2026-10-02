@@ -35,16 +35,6 @@
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108863"
   },
   {
-    "id": "event_108221",
-    "title": "2026 New York MBA 1st Year Coffee Chats - Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108221"
-  },
-  {
-    "id": "event_109154",
-    "title": "2026 Texas CBS and Stern MBA 1st Year Coffee Chats - Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=109154"
-  },
-  {
     "id": "event_107040",
     "title": "2026 CBS and Stern MBA 1st Year Recruiting Outside of New York Panel- Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=107040"
@@ -125,6 +115,11 @@
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108141"
   },
   {
+    "id": "event_108232",
+    "title": "2026 New York MBA 1st Year Coffee Chats - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108232"
+  },
+  {
     "id": "event_108866",
     "title": "2026 Seattle MBA 1st Year Get to Know the Bain Office - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108866"
@@ -196,7 +191,7 @@
   },
   {
     "id": "event_110656",
-    "title": "2026 Bain Breaks it Down: AI in Practice",
+    "title": "2026 Bain Breaks it Down: AI in Practice - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=110656"
   },
   {
@@ -368,6 +363,16 @@
     "id": "event_102384",
     "title": "2026 DC Consultant Recruiter Office Hours - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=102384"
+  },
+  {
+    "id": "event_108221",
+    "title": "2026 New York MBA 1st Year Coffee Chats - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108221"
+  },
+  {
+    "id": "event_109154",
+    "title": "2026 Texas CBS and Stern MBA 1st Year Coffee Chats - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=109154"
   },
   {
     "id": "event_109031",
