@@ -1,45 +1,5 @@
 [
   {
-    "id": "event_108147",
-    "title": "2026 Atlanta MBA 1st Year Asian at Bain Coffee Chats - Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108147"
-  },
-  {
-    "id": "event_108155",
-    "title": "2026 Atlanta MBA 1st Year Veteran at Bain Coffee Chats - Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108155"
-  },
-  {
-    "id": "event_108149",
-    "title": "2026 Atlanta MBA 1st Year Black at Bain Coffee Chats - Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108149"
-  },
-  {
-    "id": "event_108157",
-    "title": "2026 Atlanta MBA 1st Year Women at Bain Coffee Chats - Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108157"
-  },
-  {
-    "id": "event_108151",
-    "title": "2026 Atlanta MBA 1st Year Pride at Bain Coffee Chats - Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108151"
-  },
-  {
-    "id": "event_108153",
-    "title": "2026 Atlanta MBA 1st Year Familia at Bain Coffee Chats - Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108153"
-  },
-  {
-    "id": "event_108867",
-    "title": "2026 Seattle 1st Year MBA Recruiter Office Hours \u2013 Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108867"
-  },
-  {
-    "id": "event_107890",
-    "title": "2026 Los Angeles Sloan & Stern MBA 1st Year Coffee Chats - Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=107890"
-  },
-  {
     "id": "event_107379",
     "title": "2026 MBA 1st Year First Look at Bain Option 2 \u2013 Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=107379"
@@ -190,14 +150,14 @@
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108579"
   },
   {
-    "id": "event_102382",
-    "title": "2026 DC Consultant Recruiter Office Hours - Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=102382"
-  },
-  {
     "id": "event_108102",
     "title": "2026 New York MBA 1st Year Get to Know the Bain Office - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108102"
+  },
+  {
+    "id": "event_102382",
+    "title": "2026 DC Consultant Recruiter Office Hours - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=102382"
   },
   {
     "id": "event_109075",
@@ -213,11 +173,6 @@
     "id": "event_108541",
     "title": "2026 San Francisco MBA 1st Year Industry Spotlight Series: Private Equity - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108541"
-  },
-  {
-    "id": "event_106789",
-    "title": "2026 London MBA 1st Year Explore a Day in the Life of a London Summer Associate Presentation - Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=106789"
   },
   {
     "id": "event_106987",
@@ -270,6 +225,11 @@
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=106965"
   },
   {
+    "id": "event_106794",
+    "title": "2026 London MBA 1st Year Get to Know Bain London - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=106794"
+  },
+  {
     "id": "event_109291",
     "title": "2026 MBA 1st Year Women at Bain DC (WAB) Event - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=109291"
@@ -315,9 +275,59 @@
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=109177"
   },
   {
+    "id": "event_108868",
+    "title": "2026 Seattle 1st Year MBA Recruiter Office Hours \u2013 Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108868"
+  },
+  {
     "id": "event_102384",
     "title": "2026 DC Consultant Recruiter Office Hours - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=102384"
+  },
+  {
+    "id": "event_108147",
+    "title": "2026 Atlanta MBA 1st Year Asian at Bain Coffee Chats - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108147"
+  },
+  {
+    "id": "event_108155",
+    "title": "2026 Atlanta MBA 1st Year Veteran at Bain Coffee Chats - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108155"
+  },
+  {
+    "id": "event_108149",
+    "title": "2026 Atlanta MBA 1st Year Black at Bain Coffee Chats - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108149"
+  },
+  {
+    "id": "event_108157",
+    "title": "2026 Atlanta MBA 1st Year Women at Bain Coffee Chats - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108157"
+  },
+  {
+    "id": "event_108151",
+    "title": "2026 Atlanta MBA 1st Year Pride at Bain Coffee Chats - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108151"
+  },
+  {
+    "id": "event_108153",
+    "title": "2026 Atlanta MBA 1st Year Familia at Bain Coffee Chats - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108153"
+  },
+  {
+    "id": "event_108867",
+    "title": "2026 Seattle 1st Year MBA Recruiter Office Hours \u2013 Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108867"
+  },
+  {
+    "id": "event_107890",
+    "title": "2026 Los Angeles Sloan & Stern MBA 1st Year Coffee Chats - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=107890"
+  },
+  {
+    "id": "event_106789",
+    "title": "2026 London MBA 1st Year Explore a Day in the Life of a London Summer Associate Presentation - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=106789"
   },
   {
     "id": "event_107040",
