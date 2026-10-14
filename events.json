@@ -1,10 +1,5 @@
 [
   {
-    "id": "event_110770",
-    "title": "2026 Bain Seattle MBA 1st Year Veterans at Bain Session - Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=110770"
-  },
-  {
     "id": "event_108577",
     "title": "2026 San Francisco MBA 1st Year Get to Know the Bain Office - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108577"
@@ -18,11 +13,6 @@
     "id": "event_108480",
     "title": "2026 Chicago MBA 1st Year Get to Know the Bain Office - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108480"
-  },
-  {
-    "id": "event_109982",
-    "title": "2026 Bain Houston - ENR Spotlight",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=109982"
   },
   {
     "id": "event_106984",
@@ -63,11 +53,6 @@
     "id": "event_109936",
     "title": "2026 MBA 1st Year Private Equity Group (PEG) 101 - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=109936"
-  },
-  {
-    "id": "event_108238",
-    "title": "2026 New York MBA 1st Year Coffee Chats - Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108238"
   },
   {
     "id": "event_109071",
@@ -140,14 +125,14 @@
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108579"
   },
   {
-    "id": "event_102382",
-    "title": "2026 DC Consultant Recruiter Office Hours - Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=102382"
-  },
-  {
     "id": "event_108102",
     "title": "2026 New York MBA 1st Year Get to Know the Bain Office - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108102"
+  },
+  {
+    "id": "event_102382",
+    "title": "2026 DC Consultant Recruiter Office Hours - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=102382"
   },
   {
     "id": "event_109075",
@@ -163,6 +148,11 @@
     "id": "event_108541",
     "title": "2026 San Francisco MBA 1st Year Industry Spotlight Series: Private Equity - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108541"
+  },
+  {
+    "id": "event_110980",
+    "title": "2026 Texas Veterans at Bain (VAB) Virtual Summit",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=110980"
   },
   {
     "id": "event_106987",
@@ -278,6 +268,21 @@
     "id": "event_102384",
     "title": "2026 DC Consultant Recruiter Office Hours - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=102384"
+  },
+  {
+    "id": "event_110770",
+    "title": "2026 Bain Seattle MBA 1st Year Veterans at Bain Session - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=110770"
+  },
+  {
+    "id": "event_109982",
+    "title": "2026 Bain Houston - ENR Spotlight",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=109982"
+  },
+  {
+    "id": "event_108238",
+    "title": "2026 New York MBA 1st Year Coffee Chats - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108238"
   },
   {
     "id": "event_108482",
