@@ -5,26 +5,6 @@
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108577"
   },
   {
-    "id": "event_108866",
-    "title": "2026 Seattle MBA 1st Year Get to Know the Bain Office - Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108866"
-  },
-  {
-    "id": "event_108480",
-    "title": "2026 Chicago MBA 1st Year Get to Know the Bain Office - Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108480"
-  },
-  {
-    "id": "event_106984",
-    "title": "2026 Stern MBA 1st Year Partner Speaker Series- In Person",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=106984"
-  },
-  {
-    "id": "event_108922",
-    "title": "2026 Bridge to APAC: Meet Our APAC Offices (MBA Schools - US) - Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108922"
-  },
-  {
     "id": "event_107374",
     "title": "2026 Bain Breaks it Down: An Inside Look into a Bain Case Team - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=107374"
@@ -40,19 +20,9 @@
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108864"
   },
   {
-    "id": "event_108317",
-    "title": "2026 Denver MBA 1st Year Get to Know the Bain Office - Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108317"
-  },
-  {
     "id": "event_108263",
     "title": "2026 Get to Know Boston Pride at Bain - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108263"
-  },
-  {
-    "id": "event_109936",
-    "title": "2026 MBA 1st Year Private Equity Group (PEG) 101 - Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=109936"
   },
   {
     "id": "event_109071",
@@ -235,6 +205,11 @@
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=102383"
   },
   {
+    "id": "event_111386",
+    "title": "2026 APAC Consultant Recruiter Office Hours (MBA Schools - US) - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=111386"
+  },
+  {
     "id": "event_108580",
     "title": "2026 San Francisco MBA 1st Year Spotlight Series: GenAI - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108580"
@@ -268,6 +243,36 @@
     "id": "event_102384",
     "title": "2026 DC Consultant Recruiter Office Hours - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=102384"
+  },
+  {
+    "id": "event_108866",
+    "title": "2026 Seattle MBA 1st Year Get to Know the Bain Office - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108866"
+  },
+  {
+    "id": "event_108480",
+    "title": "2026 Chicago MBA 1st Year Get to Know the Bain Office - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108480"
+  },
+  {
+    "id": "event_106984",
+    "title": "2026 Stern MBA 1st Year Partner Speaker Series- In Person",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=106984"
+  },
+  {
+    "id": "event_108922",
+    "title": "2026 Bridge to APAC: Meet Our APAC Offices (MBA Schools - US) - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108922"
+  },
+  {
+    "id": "event_108317",
+    "title": "2026 Denver MBA 1st Year Get to Know the Bain Office - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108317"
+  },
+  {
+    "id": "event_109936",
+    "title": "2026 MBA 1st Year Private Equity Group (PEG) 101 - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=109936"
   },
   {
     "id": "event_110770",
