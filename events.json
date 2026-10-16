@@ -1,10 +1,5 @@
 [
   {
-    "id": "event_108577",
-    "title": "2026 San Francisco MBA 1st Year Get to Know the Bain Office - Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108577"
-  },
-  {
     "id": "event_108864",
     "title": "2026 Seattle MBA 1st Year Coffee Chats - Virtual (Oct 15 - 19)",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108864"
@@ -85,14 +80,14 @@
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108579"
   },
   {
-    "id": "event_108102",
-    "title": "2026 New York MBA 1st Year Get to Know the Bain Office - Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108102"
-  },
-  {
     "id": "event_102382",
     "title": "2026 DC Consultant Recruiter Office Hours - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=102382"
+  },
+  {
+    "id": "event_108102",
+    "title": "2026 New York MBA 1st Year Get to Know the Bain Office - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108102"
   },
   {
     "id": "event_109075",
@@ -200,6 +195,11 @@
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=102383"
   },
   {
+    "id": "event_111450",
+    "title": "2026 Get to Know Chicago Pride at Bain - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=111450"
+  },
+  {
     "id": "event_108580",
     "title": "2026 San Francisco MBA 1st Year Spotlight Series: GenAI - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108580"
@@ -238,6 +238,11 @@
     "id": "event_102384",
     "title": "2026 DC Consultant Recruiter Office Hours - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=102384"
+  },
+  {
+    "id": "event_108577",
+    "title": "2026 San Francisco MBA 1st Year Get to Know the Bain Office - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108577"
   },
   {
     "id": "event_107374",
