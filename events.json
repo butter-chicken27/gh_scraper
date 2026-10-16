@@ -5,16 +5,6 @@
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108577"
   },
   {
-    "id": "event_107374",
-    "title": "2026 Bain Breaks it Down: An Inside Look into a Bain Case Team - Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=107374"
-  },
-  {
-    "id": "event_109489",
-    "title": "2026 Atlanta MBA 1st Year Pride at Bain Coffee Chats - Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=109489"
-  },
-  {
     "id": "event_108864",
     "title": "2026 Seattle MBA 1st Year Coffee Chats - Virtual (Oct 15 - 19)",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108864"
@@ -190,6 +180,11 @@
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=109291"
   },
   {
+    "id": "event_111386",
+    "title": "2026 APAC Consultant Recruiter Office Hours (MBA Schools - US) - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=111386"
+  },
+  {
     "id": "event_109073",
     "title": "2026 DC 1st Year MBA Industries Q&A with Consultants in the DC Office",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=109073"
@@ -203,11 +198,6 @@
     "id": "event_102383",
     "title": "2026 DC Consultant Recruiter Office Hours - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=102383"
-  },
-  {
-    "id": "event_111386",
-    "title": "2026 APAC Consultant Recruiter Office Hours (MBA Schools - US) - Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=111386"
   },
   {
     "id": "event_108580",
@@ -240,9 +230,24 @@
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108868"
   },
   {
+    "id": "event_107375",
+    "title": "2026 Bain Breaks it Down: How Generative AI is Transforming Strategy at Bain - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=107375"
+  },
+  {
     "id": "event_102384",
     "title": "2026 DC Consultant Recruiter Office Hours - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=102384"
+  },
+  {
+    "id": "event_107374",
+    "title": "2026 Bain Breaks it Down: An Inside Look into a Bain Case Team - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=107374"
+  },
+  {
+    "id": "event_109489",
+    "title": "2026 Atlanta MBA 1st Year Pride at Bain Coffee Chats - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=109489"
   },
   {
     "id": "event_108866",
