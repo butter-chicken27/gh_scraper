@@ -1,33 +1,8 @@
 [
   {
-    "id": "event_108864",
-    "title": "2026 Seattle MBA 1st Year Coffee Chats - Virtual (Oct 15 - 19)",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108864"
-  },
-  {
     "id": "event_108263",
     "title": "2026 Get to Know Boston Pride at Bain - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108263"
-  },
-  {
-    "id": "event_108483",
-    "title": "2026 Chicago MBA 1st Year Coffee Chats - Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108483"
-  },
-  {
-    "id": "event_110656",
-    "title": "2026 Bain Breaks it Down: AI in Practice - Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=110656"
-  },
-  {
-    "id": "event_108320",
-    "title": "2026 Denver MBA 1st Year Meet the Leadership Team - Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108320"
-  },
-  {
-    "id": "event_107383",
-    "title": "2026 MBA 1st Year Inside Staffing: Your Path at Bain - Option 2 \u2013 Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=107383"
   },
   {
     "id": "event_107356",
@@ -58,11 +33,6 @@
     "id": "event_107380",
     "title": "2026 MBA 1st Year First Look at Bain Option 3 \u2013 Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=107380"
-  },
-  {
-    "id": "event_107762",
-    "title": "2026 Los Angeles MBA 1st Year Coffee Chats - Virtual",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=107762"
   },
   {
     "id": "event_107384",
@@ -175,6 +145,11 @@
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108289"
   },
   {
+    "id": "event_108276",
+    "title": "2026 Boston 1st Year MBA Pride at Bain Case Workshop - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108276"
+  },
+  {
     "id": "event_109291",
     "title": "2026 MBA 1st Year Women at Bain DC (WAB) Event - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=109291"
@@ -243,6 +218,36 @@
     "id": "event_102384",
     "title": "2026 DC Consultant Recruiter Office Hours - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=102384"
+  },
+  {
+    "id": "event_108864",
+    "title": "2026 Seattle MBA 1st Year Coffee Chats - Virtual (Oct 15 - 19)",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108864"
+  },
+  {
+    "id": "event_108483",
+    "title": "2026 Chicago MBA 1st Year Coffee Chats - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108483"
+  },
+  {
+    "id": "event_110656",
+    "title": "2026 Bain Breaks it Down: AI in Practice - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=110656"
+  },
+  {
+    "id": "event_108320",
+    "title": "2026 Denver MBA 1st Year Meet the Leadership Team - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108320"
+  },
+  {
+    "id": "event_107383",
+    "title": "2026 MBA 1st Year Inside Staffing: Your Path at Bain - Option 2 \u2013 Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=107383"
+  },
+  {
+    "id": "event_107762",
+    "title": "2026 Los Angeles MBA 1st Year Coffee Chats - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=107762"
   },
   {
     "id": "event_109071",
