@@ -15,11 +15,6 @@
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108249"
   },
   {
-    "id": "event_110980",
-    "title": "2026 Texas Veterans at Bain (VAB) Virtual Summit",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=110980"
-  },
-  {
     "id": "event_106789",
     "title": "2026 London MBA 1st Year Explore a Day in the Life of a London Summer Associate Presentation - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=106789"
@@ -70,11 +65,6 @@
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108152"
   },
   {
-    "id": "event_106965",
-    "title": "2026 Stern MBA 1st Year Women at Bain Event - In-Person",
-    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=106965"
-  },
-  {
     "id": "event_106794",
     "title": "2026 London MBA 1st Year Get to Know Bain London - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=106794"
@@ -93,6 +83,11 @@
     "id": "event_109291",
     "title": "2026 MBA 1st Year Women at Bain DC (WAB) Event - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=109291"
+  },
+  {
+    "id": "event_108253",
+    "title": "2026 New York MBA 1st Year Coffee Chats - Virtual",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=108253"
   },
   {
     "id": "event_111885",
@@ -183,6 +178,16 @@
     "id": "event_102384",
     "title": "2026 DC Consultant Recruiter Office Hours - Virtual",
     "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=102384"
+  },
+  {
+    "id": "event_110980",
+    "title": "2026 Texas Veterans at Bain (VAB) Virtual Summit",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=110980"
+  },
+  {
+    "id": "event_106965",
+    "title": "2026 Stern MBA 1st Year Women at Bain Event - In-Person",
+    "url": "https://www.bain.com/careers/work-with-us/recruiting-events/view-event-description/?eventid=106965"
   },
   {
     "id": "event_107384",
