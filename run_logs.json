@@ -1,11 +1,5 @@
 [
   {
-    "timestamp": "2026-11-09T14:45:30.881651Z",
-    "status": "SUCCESS",
-    "message": "Completed run. Scraped 7 total events (0 new).",
-    "total_events_scraped": 7
-  },
-  {
     "timestamp": "2026-11-09T15:00:42.398001Z",
     "status": "SUCCESS",
     "message": "Completed run. Scraped 7 total events (0 new).",
@@ -595,6 +589,12 @@
   },
   {
     "timestamp": "2026-11-10T15:45:37.808129Z",
+    "status": "SUCCESS",
+    "message": "Completed run. Scraped 6 total events (0 new).",
+    "total_events_scraped": 6
+  },
+  {
+    "timestamp": "2026-11-10T16:00:42.162806Z",
     "status": "SUCCESS",
     "message": "Completed run. Scraped 6 total events (0 new).",
     "total_events_scraped": 6
